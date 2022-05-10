@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karina</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="#portfolio" class="menu__link">Portfolio</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="title">KARINA BEVZ</h1>
+                <h2 class="subtitle">PHOTOGRAPHER/ NEW YORK</h2>
+                <div class="social">
+                    <ul class="social__list">
+                        <li class="social__item"><a href="" class="social__link">
+                                <img src="img/twitter.png" alt="twitter">
+                            </a></li>
+                        <li class="social__item"><a href="" class="social__link">
+                                <img src="img/instagram.png" alt="instagram">
+                            </a></li>
+                        <li class="social__item"><a href="" class="social__link">
+                                <img src="img/facebook.png" alt="facebook">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__left">
+                    <img src="img/about_girl.jpg" alt="girl">
+                </div>
+                <div class="about__right">
+                    <h2 class="section__title">About</h2>
+                    <p class="section__info">I am a freelance photographer based in New York specializing in fashion,
+                        travel and people photography.</p>
+                    <p class="section__info">I have an unhealthy obsession with photography. Over the last 7 years I
+                        have worked with a wide variety of clients in a
+                        wide variety of fields, from magazine shoots to aerial photography, as well as working with
+                        leading pan-European
+                        advertising campaigns.</p>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="section__title">Portfolio</h2>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item">
+                        <div class="portfolio__thumb">
+                            <img src="img/portfolio-1.jpg" alt="portfolio work 1">
+                        </div>
+                        <h3 class="portfolio__title">Black & White</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <div class="portfolio__thumb">
+                            <img src="img/portfolio-2.jpg" alt="portfolio work 2">
+                        </div>
+                        <h3 class="portfolio__title">Fashion</h3>
+                    </li>
+                    <li class="portfolio__item">
+                        <div class="portfolio__thumb">
+                            <img src="img/portfolio-3.jpg" alt="portfolio work 3">
+                        </div>
+                        <h3 class="portfolio__title">Streetstyle</h3>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="prices">
+            <div class="container">
+                <h2 class="section__title">Prices</h2>
+                <ul class="prices__list">
+                    <li class="prices__item">
+                        <h3 class="prices__title">Minimal</h3>
+                        <h3 class="prices__title">300</h3>
+                        <ul class="tariff__list">
+                            <li class="tariff__item"><span>Duration</span><span>1 hour</span></li>
+                            <li class="tariff__item"><span>Number of photos</span><span>10-20</span></li>
+                            <li class="tariff__item"><span>Consultation on style</span><span></span></li>
+                        </ul>
+                    </li>
+                    <li class="prices__item">
+                        <h3 class="prices__title">Standart</h3>
+                        <h3 class="prices__title">500</h3>
+                        <ul class="tariff__list">
+                            <li class="tariff__item"><span>Duration</span><span>2 hour</span></li>
+                            <li class="tariff__item"><span>Number of photos</span><span>50-70</span></li>
+                            <li class="tariff__item"><span>Consultation on style</span><span></span></li>
+                        </ul>
+                    </li>
+                    <li class="prices__item">
+                        <h3 class="prices__title">Maximum</h3>
+                        <h3 class="prices__title">700</h3>
+                        <ul class="tariff__list">
+                            <li class="tariff__item"><span>Duration</span><span>3 hour</span></li>
+                            <li class="tariff__item"><span>Number of photos</span><span>90-100</span></li>
+                            <li class="tariff__item"><span>Consultation on style</span><span>Yes</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <h2 class="section__title">Have any questions?</h2>
+                <form class="contact__form">
+                    <input class="form__name" type="text" placeholder="Your name">
+                    <input class="form__email" type="email" name="email" id="email" placeholder="Your email">
+                    <input class="form__text" type="text" placeholder="Message">
+                    <button class="form__btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+
+</body>
+
+</html>

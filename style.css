@@ -1,0 +1,274 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+img {
+   display: block;
+}
+
+ul,
+ol {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+button {
+   border: none;
+   outline: none;
+}
+
+body {
+   font-family: 'Martel', serif;
+   font-weight: 400;
+   color: #000;
+}
+.container {
+   max-width: 1600px;
+   padding: 0 50px;
+   margin-left: auto;
+   margin-right: auto;
+   border-right: 1px solid red;
+   border-left: 1px solid red;
+}
+/* ----------------------------- header ---------------------- */
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 90px;
+   width: 100%;
+}
+.header .container {
+   height: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
+
+.menu__list {
+   display: flex;
+}
+
+.menu__item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.menu__link {
+   font-size: 25px;
+   line-height: 42px;
+   letter-spacing: 0.09em;
+   color: #000;
+   display: block;
+   transition: transform 300ms;
+}
+.menu__link:hover,
+.menu__link:focus {
+   transform: scale(1.2);
+}
+
+/* ------------------- hero ------------------------ */
+.hero {
+   padding-top: 350px;
+   padding-bottom: 315px;
+   background: #ddd7d9 url('img/hero_girl.png') center center/contain no-repeat;
+}
+.hero .container {
+   position: relative;
+}
+.title {
+   font-weight: 700;
+   font-size: 60px;
+   line-height: 101px;
+   letter-spacing: 0.1em;
+}
+.subtitle {
+   font-size: 20px;
+   line-height: 34px;
+   letter-spacing: 0.1em;
+}
+.hero .social {
+   position: absolute;
+   right: 50px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.social__list {
+   display: flex;
+   flex-direction: column;
+}
+.social__item:not(:last-child) {
+   margin-bottom: 48px;
+}
+.social__link {
+   display: block;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: transform 300ms;
+}
+.social__link:hover,
+.social__link:focus {
+   transform: scale(1.2);
+}
+
+/* ---------------------------- about ----------------- */
+
+.about {
+   padding-top: 133px;
+   padding-bottom: 94px;
+   background-color: #efefef;
+}
+.about .container {
+   display: flex;
+}
+.about__left {
+   flex-basis: 50%;
+}
+.about__right {
+   flex-basis: 50%;
+}
+.section__title {
+   font-weight: 700;
+   font-size: 60px;
+   line-height: 101px;
+   letter-spacing: 0.1em;
+}
+.about .section__title {
+   margin-bottom: 71px;
+}
+.section__info {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 51px;
+   letter-spacing: 0.1em;
+}
+.about .section__info:last-child {
+   margin-top: 15px;
+}
+/* -------------------- portfolio ----------------------- */
+.portfolio {
+   padding-top: 85px;
+   padding-bottom: 75px;
+   background-color: #dae3e9;
+}
+
+.portfolio .container {
+}
+.portfolio .section__title {
+   text-align: center;
+   margin-bottom: 86px;
+}
+.portfolio__list {
+   display: flex;
+   justify-content: space-between;
+}
+.portfolio__item {
+   cursor: pointer;
+   transition: transform 300ms;
+}
+.portfolio__item:hover,
+.portfolio__item:focus {
+   transform: scale(1.01);
+}
+.portfolio__thumb {
+   margin-bottom: 54px;
+}
+.portfolio__title {
+   text-align: center;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 67px;
+   letter-spacing: 0.1em;
+}
+
+/* ---------------------------- prices ---------------------------- */
+.prices {
+   padding-top: 57px;
+   margin-bottom: 171px;
+   background-color: #fffbfb;
+}
+.prices .container {
+}
+.prices .section__title {
+   text-align: center;
+}
+.prices__list {
+   margin-top: 57px;
+   display: flex;
+   justify-content: space-between;
+}
+.prices__item {
+   max-width: 450px;
+   flex-grow: 1;
+   cursor: pointer;
+   transition: transform 300ms;
+}
+.prices__item:hover,
+.prices__item:focus {
+   transform: scale(1.01);
+}
+.prices__title {
+   text-align: center;
+   font-weight: 600;
+   font-size: 45px;
+   line-height: 76px;
+   letter-spacing: 0.1em;
+}
+.tariff__list {
+   margin-top: 66px;
+   border: 1px solid #000;
+   padding: 87px 30px 60px;
+
+   font-weight: 400;
+   font-size: 25px;
+   line-height: 42px;
+   letter-spacing: 0.1em;
+}
+.tariff__item {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 22px;
+   border-bottom: 1px solid #000;
+}
+.tariff__item:not(:last-child) {
+   margin-bottom: 113px;
+}
+
+/* -------------------------- contact ----------------------------- */
+.contact {
+   padding-top: 166px;
+   padding-bottom: 69px;
+   background: #fff url('img/contact_girl.jpg') center bottom no-repeat;
+}
+.contact .container {
+}
+.contact .section__title {
+   color: #fff;
+}
+.contact__form {
+   margin-top: 71px;
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 42px;
+   letter-spacing: 0.1em;
+   color: #ffffff;
+}
+.form__name {
+}
+.form__email {
+}
+.form__text {
+}
+.form__btn {
+}
+input::placeholder {
+   color: #fff;
+}
