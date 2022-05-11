@@ -312,8 +312,7 @@ input {
 input:focus {
    box-shadow: none;
    outline: none;
-   border: none;
-   border-bottom: 4px solid #fff;
+   box-shadow: 0 4px 0 -1px #fff;
 }
 input::placeholder {
    color: #fff;
@@ -335,6 +334,7 @@ input::placeholder {
 .footer__list {
    display: flex;
    justify-content: space-between;
+   width: 100%;
 
    font-weight: 700;
    font-size: 30px;
@@ -342,7 +342,7 @@ input::placeholder {
    letter-spacing: 0.1em;
 }
 .footer__list-item {
-   flex-basis: 38%;
+   flex-basis: 33.333%;
 }
 .footer__title {
    width: 272px;
