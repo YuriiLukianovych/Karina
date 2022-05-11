@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martel:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -66,26 +66,31 @@
         <section class="portfolio" id="portfolio">
             <div class="container">
                 <h2 class="section__title">Portfolio</h2>
-                <ul class="portfolio__list">
-                    <li class="portfolio__item">
-                        <div class="portfolio__thumb">
-                            <img src="img/portfolio-1.jpg" alt="portfolio work 1">
-                        </div>
-                        <h3 class="portfolio__title">Black & White</h3>
-                    </li>
-                    <li class="portfolio__item">
-                        <div class="portfolio__thumb">
-                            <img src="img/portfolio-2.jpg" alt="portfolio work 2">
-                        </div>
-                        <h3 class="portfolio__title">Fashion</h3>
-                    </li>
-                    <li class="portfolio__item">
-                        <div class="portfolio__thumb">
-                            <img src="img/portfolio-3.jpg" alt="portfolio work 3">
-                        </div>
-                        <h3 class="portfolio__title">Streetstyle</h3>
-                    </li>
-                </ul>
+                <div class="swiper">
+                    <ul class="portfolio__list swiper-wrapper">
+                        <li class="portfolio__item swiper-slide">
+                            <div class="portfolio__thumb">
+                                <img src="img/portfolio-1.jpg" alt="portfolio work 1">
+                            </div>
+                            <h3 class="portfolio__title">Black & White</h3>
+                        </li>
+                        <li class="portfolio__item swiper-slide">
+                            <div class="portfolio__thumb">
+                                <img src="img/portfolio-2.jpg" alt="portfolio work 2">
+                            </div>
+                            <h3 class="portfolio__title">Fashion</h3>
+                        </li>
+                        <li class="portfolio__item swiper-slide">
+                            <div class="portfolio__thumb">
+                                <img src="img/portfolio-3.jpg" alt="portfolio work 3">
+                            </div>
+                            <h3 class="portfolio__title">Streetstyle</h3>
+                        </li>
+                    </ul>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </section>
         <section class="prices">
@@ -170,6 +175,21 @@
     </footer>
     <div class="scroll-up is-hidden" data-up></div>
     <script src="script.js"></script>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 100,
+            centeredSlides: true,
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    </script>
 </body>
 
 </html>

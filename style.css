@@ -181,10 +181,12 @@ body {
    margin-bottom: 86px;
 }
 .portfolio__list {
-   display: flex;
-   justify-content: space-between;
+   width: 100%;
+   /* display: flex; */
+   /* justify-content: space-between; */
 }
 .portfolio__item {
+   width: min-content;
    cursor: pointer;
    transition: transform 300ms;
 }
@@ -194,6 +196,10 @@ body {
 }
 .portfolio__thumb {
    margin-bottom: 54px;
+}
+.portfolio__thumb img {
+   object-fit: cover;
+   object-position: center center;
 }
 .portfolio__title {
    text-align: center;
@@ -312,7 +318,7 @@ input {
 input:focus {
    box-shadow: none;
    outline: none;
-   box-shadow: 0 4px 0 -1px #fff;
+   box-shadow: 0 3px 0 0px #fff;
 }
 input::placeholder {
    color: #fff;
@@ -379,4 +385,10 @@ input::placeholder {
    font-size: 20px;
    line-height: 25px;
    letter-spacing: 0.1em;
+}
+/* -------------------------------------------------- */
+.swiper-button-next,
+.swiper-button-prev {
+   color: #000;
+   --swiper-navigation-color: #222;
 }
