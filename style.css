@@ -34,6 +34,22 @@ body {
    margin-left: auto;
    margin-right: auto;
 }
+.scroll-up {
+   width: 80px;
+   height: 80px;
+   background: #b4c7d4 url('img/up-arrow.png') center center/contain no-repeat;
+   border-radius: 50%;
+   position: fixed;
+   right: 50px;
+   bottom: 50px;
+   opacity: 0.8;
+   cursor: pointer;
+   transition: all 300ms;
+}
+.scroll-up.is-hidden {
+   visibility: hidden;
+   opacity: 0;
+}
 /* ----------------------------- header ---------------------- */
 .header {
    position: absolute;
@@ -73,7 +89,7 @@ body {
 /* ------------------- hero ------------------------ */
 .hero {
    padding-top: 350px;
-   padding-bottom: 315px;
+   padding-bottom: 270px;
    background: #ddd7d9 url('img/hero_girl.png') center center/contain no-repeat;
 }
 .hero .container {
@@ -360,7 +376,7 @@ input::placeholder {
    align-self: flex-end;
 
    font-weight: 700;
-   font-size: 15px;
+   font-size: 20px;
    line-height: 25px;
    letter-spacing: 0.1em;
 }
